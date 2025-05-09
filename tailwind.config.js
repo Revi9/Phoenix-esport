@@ -6,9 +6,7 @@ export default {
   content: [
     "./*.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "./src/**/*.js",
-    "./src/**/*.tsx",
-    "./node_modules/tw-elements/js/**/*.js"
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
 
   ],
   theme: {
