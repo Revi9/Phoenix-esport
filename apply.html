@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="bg-[#293334] h-screen scroll-smooth">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Phoenix Esport | Apply</title>
+      <link rel="icon" type="image/x-icon" href="/logo.svg" />
+ 
+
+   </head>
+   <body class="h-full">
+    <div class="loader"><span class="loading loading-ring loading-lg"></span></div>
+    <div id="backbutton" class="mx-5 pt-5 absolute ">
+      <button type="button" onclick=" window.location.replace('http://localhost:5173/')"
+      class="flex justify-center items-center text-white text-lg hover:text-primary">
+        <svg class="w-6 h-6  text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
+        </svg> 
+        Home Page   
+      </button>
+
+    </div>
+      <section id="base" class="base h-full items-center flex justify-center ">
+         <form  id="teamform" method="POST" class="flex max-w-[28rem] mx-auto  w-full flex-col justify-between rounded-[1rem] items-center shadow-lg bg-[#0F4649] h-[80%]">
+            <p class=" pt-10 text-2xl text-primary">Team Application</p>
+            <diV class="choose w-full flex flex-col gap-5 justify-center items-center">
+               <label for="appeal" class="  text-sm font-medium text-gray-900 dark:text-white">What will you do?</label>
+               <select id="appeal" class="border text-sm rounded-lg focus:ring-primary focus:border-primary block w-[85%] p-2.5 bg-[#2D3333] border-[#395454] placeholder-gray-400 text-white ">
+                  <option value="cc">Content Creator</option>
+                  <option value="esport">E-sport Pro</option>
+                  <option value="tm">Team Management</option>
+               </select>
+               <button type="button" id="next"  
+               class="!h-[2.5rem] mt-5 mx-12  w-[45%] !min-h-2 btn btn-circle btn-primary"
+               >
+             Next
+            </button>
+            </diV>
+            <diV class="cc opacity-[0.001] w-full hidden flex-col gap-5 justify-center items-center">
+              <label for="appeal" class="  text-sm font-medium text-gray-900 dark:text-white">Your platform?</label>
+              <select id="channel" class="border text-sm rounded-lg focus:ring-primary focus:border-primary block w-[85%] p-2.5 bg-[#2D3333] border-[#395454] placeholder-gray-400 text-white ">
+                <option value="twitch">Twitch</option>
+                <option value="youtube">Youtube</option>
+                <option value="both">Both</option>
+                <div class="mb-5">
+                  <input  type="url" id="ccy" placeholder="Channel Link">
+                  <input  type="email" id="cce" placeholder="Email Address">
+                  <input  type="text" id="cci" placeholder="Instagram User">
+                  <button  type="submit" id="cc"
+                  class=" !h-[2.5rem]  mx-12 w-[45%] !min-h-2 btn btn-circle btn-primary"
+                  >
+                Submit
+               </button>
+              </div>
+      
+             </select>
+            </diV>
+            <diV class="esport opacity-[0.001] w-full hidden flex-col gap-5 justify-center items-center">
+              <label for="appeal" class="  text-sm font-medium text-gray-900 dark:text-white">Your platform?</label>
+              <select id="pp" class="border text-sm rounded-lg focus:ring-primary focus:border-primary block w-[85%] p-2.5 bg-[#2D3333] border-[#395454] placeholder-gray-400 text-white ">
+                <option value="pc">PC</option>
+                <option value="console">Console</option>
+                <option value="mobile">Mobile</option>
+                <div class="mb-5">
+                  <input  type="email" autocomplete="off" id="email" placeholder="Email Address">
+                  <input  type="text" id="instagram" placeholder="Instagram User">
+                  <input  type="text" id="game" placeholder="Game Name">
+                  <button    type="submit" id="esp"
+                  class=" !h-[2.5rem]  mx-12 w-[45%] !min-h-2 btn btn-circle btn-primary"
+                  >
+                Submit
+               </button>
+              </div>
+      
+             </select>
+            </diV>
+            <diV class="tm opacity-[0.001] w-full hidden flex-col gap-5 justify-center items-center">
+              <label for="appeal" class="  text-sm font-medium text-gray-900 dark:text-white">Your Department?</label>
+              <select id="mm" class="border text-sm rounded-lg focus:ring-primary focus:border-primary block w-[85%] p-2.5 bg-[#2D3333] border-[#395454] placeholder-gray-400 text-white ">
+                <option value="dd">Discord Department</option>
+                <option value="hr">Human Resources Department</option>
+                <option value="pr">Production Department</option>
+                <option value="de">Designing Department</option>
+                <option value="mp">Marketing & Public Relations</option>
+                <option value="tw">Twitch Mod</option>
+                <div class="mb-5">
+                  <input  type="email" id="tme" placeholder="Email Address">
+                  <input  type="text" id="tmi" placeholder="Instagram User">
+                  <input  type="text" id="tmd" placeholder="Discord User">
+                  <input  type="text" id="link" placeholder="Link Your Work">
+                  <button  type="submit" id="tm"
+                  class=" !h-[2.5rem]  mx-12 w-[45%] !min-h-2 btn btn-circle btn-primary"
+                  >
+                Submit
+               </button>
+              </div>
+      
+             </select>
+            </diV>
+            <div class="ba hidden">
+              <button type="button">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12l4-4m-4 4 4 4"/>
+                </svg>         
+              </button>
+            </div>
+            <image src="public/logo.svg" width="48" height="48" class="pointer-events-none  mb-5" />
+
+         </form>
+         <div id="tymsg" class="h-full hidden flex-col  gap-10 justify-center items-center ">
+          <h1 class="text-4xl text-primary font-bold">Thank you for applying!</h1>
+          <p class="text-2xl text-[#ffffffb0] ">Our team will review your application and email you.</p>
+          <button onclick=" window.location.replace('http://localhost:5173/')"
+          class="w-1/2 md:w-[25%] text-lg btn btn-circle  btn-primary"
+          >
+          Home Page
+       </button>
+         </div>
+ 
+      </section>
+      
+      <script type="module" src="/src/main.ts"></script>
+      <script type="module" src="/src/functions.ts"></script>
+   </body>
+</html>
