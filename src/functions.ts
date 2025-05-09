@@ -34,24 +34,26 @@ if (window.location.pathname.includes("/team")) {
             }, 500);
         }
     });
-    const membersData = (all)!;
+    window.addEventListener("load", () => {
+        const membersData = (all)!;
 
 
 
-    var contenar = document.getElementById("memeberCont") as HTMLElement;
-    //@ts-ignore
-    for (let i = 0; i < membersData.length; i++) {
-        const Card = `<div class="group block text-center lg:w-1/5 sm:w-1/3 min-[450px]:w-1/2 w-full">
-        <a class="pf" href=${membersData[i]["instalink"]}>
-         <div class="relative mb-5">
-            <img src=${membersData[i]["img"]} alt="image" class="pfpimg w-28 h-28 rounded-2xl object-cover mx-auto ransition-all duration-500 border-2 border-solid border-transparent group-hover:border-primary"/>
-        </div>
-        <h4 class="username text-xl text-white font-semibold text-center mb-2 transition-all duration-500 group-hover:text-primary">${membersData[i]["name"]}</h4>
-        <span class="description text-gray-500 text-center block transition-all duration-500 group-hover:text-[#21ABAE]">${membersData[i]["description"]}</span>                  
-        </a>
-    </div>`;
-        contenar.innerHTML += Card;
-    }
+        var contenar = document.getElementById("memeberCont") as HTMLElement;
+        //@ts-ignore
+        for (let i = 0; i < membersData.length; i++) {
+            const Card = `<div class="group block text-center lg:w-1/5 sm:w-1/3 min-[450px]:w-1/2 w-full">
+            <a class="pf" href=${membersData[i]["instalink"]}>
+             <div class="relative mb-5">
+                <img src=${membersData[i]["img"]} alt="image" class="pfpimg w-28 h-28 rounded-2xl object-cover mx-auto ransition-all duration-500 border-2 border-solid border-transparent group-hover:border-primary"/>
+            </div>
+            <h4 class="username text-xl text-white font-semibold text-center mb-2 transition-all duration-500 group-hover:text-primary">${membersData[i]["name"]}</h4>
+            <span class="description text-gray-500 text-center block transition-all duration-500 group-hover:text-[#21ABAE]">${membersData[i]["description"]}</span>                  
+            </a>
+        </div>`;
+            contenar.innerHTML += Card;
+        }
+    })
 
 
 }
