@@ -22,6 +22,7 @@ function getHtmlEntries() {
     return entries;
 }
 export default defineConfig({
+    base: "index",
     build: {
         rollupOptions: {
             input: getHtmlEntries()
