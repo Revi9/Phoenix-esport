@@ -1,9 +1,11 @@
 import { defineConfig } from "vite";
-
+//@ts-ignore
 import path from 'path';
+//@ts-ignore
 import fs from 'fs';
 
 function getHtmlEntries() {
+    //@ts-ignore
     const pagesDir = path.resolve(__dirname, "");
     const entries = {};
 
@@ -22,7 +24,6 @@ function getHtmlEntries() {
     return entries;
 }
 export default defineConfig({
-
     build: {
         rollupOptions: {
             input: getHtmlEntries()
