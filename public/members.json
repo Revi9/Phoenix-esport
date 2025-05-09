@@ -50,7 +50,7 @@
     {
         "name": "OmarT",
         "img": "/OmarTReal.png",
-        "description": "Content Creator",
+        "description": "Streamer",
         "instalink": "https://www.twitch.tv/realomart"
     },
     {
@@ -80,7 +80,7 @@
     {
         "name": "Hxou",
         "img": "/HXOU.png",
-        "description": "Content Creator",
+        "description": "Streamer",
         "instalink": "https://solo.to/hxou"
     },
     {
@@ -110,7 +110,7 @@
     {
         "name": "Abu Nerfi",
         "img": "/AbuNerfi.png",
-        "description": "Editor & Content creator",
+        "description": "Content creator",
         "instalink": "https://www.youtube.com/@abu_nerfi"
     }
 ]
