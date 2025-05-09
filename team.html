@@ -3,6 +3,7 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Check out Phoenix Esport team members" />
       <title>Phoenix Team | Members</title>
       <link rel="icon"  href="/logo.png" />
     
@@ -10,7 +11,7 @@
    <body class="h-screen text-secondary">
       <div class="loader"><span class="loading loading-ring loading-lg"></span></div>
       <section id="header" class="px-5 flex w-full items-center justify-center gap-48 md:gap-0 md:justify-between">
-         <image src="/logo.svg" class="size-14 mt-2" />
+         <image src="/logo.svg" alt="Pnx Logo" class="size-14 mt-2" />
          <a href="index" class=" md:hidden py-5 text-2xl font-bold animate-pulse">Home</a>
          <div class="md:flex hidden md:flex-row justify-start items-center">
             <ul
@@ -62,7 +63,13 @@
             >
             Team Members
          </p>
-         <image src="public/logo.svg" class="absolute z-[0] pointer-events-none h-[50%] blur-3xl opacity-5" />
+         <div class="hidden absolute top-[50px] md:inline-flex flex-row">
+            <div class="absolute inset-0 opacity-50 bgs-blur">
+               <div
+                  class="bg-shape1 rounded-full relative size-[100px] opacity-50 bg-primary bgs-blur"
+                  ></div>
+            </div>
+         </div>
       </section>
       <section>
          <section class="py-24 ">
