@@ -1,6 +1,4 @@
-import all from '../../PhoenixSite/members/members.json'
-import { Carousel, Input, initTWE } from "tw-elements";
-initTWE({ Input }, { allowReinits: true });
+import all from '../public/members.json'
 
 
 
@@ -8,7 +6,7 @@ function statsget() {
     if (window.location.pathname.includes("/apply.html")) return;
     if (window.location.pathname.includes('/team.html')) return;
 
-    initTWE({ Carousel });
+
 }
 statsget()
 

@@ -9,6 +9,7 @@ export default {
     "./src/**/*.js",
     "./src/**/*.tsx",
     "./node_modules/tw-elements/js/**/*.js"
+
   ],
   theme: {
     extend: {
