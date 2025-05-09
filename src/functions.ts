@@ -187,7 +187,7 @@ if (window.location.pathname.includes("/apply")) {
                 },
                 body: JSON.stringify(ccformData)
             }).then(response => response.json())
-                .then(data => {
+                .then(() => {
 
                     form.style.display = 'none';
                     tymsg.style.display = 'flex';
@@ -208,7 +208,7 @@ if (window.location.pathname.includes("/apply")) {
                 },
                 body: JSON.stringify(esformData)
             }).then(response => response.json())
-                .then(data => {
+                .then(() => {
 
                     form.style.display = 'none';
                     tymsg.style.display = 'flex';
@@ -228,7 +228,7 @@ if (window.location.pathname.includes("/apply")) {
                 },
                 body: JSON.stringify(tmformData)
             }).then(response => response.json())
-                .then(data => {
+                .then(() => {
 
                     form.style.display = 'none';
                     tymsg.style.display = 'flex';
