@@ -1,115 +1,115 @@
 [
     {
         "name": "Fares",
-        "img": "public/Fares.png",
+        "img": "/Fares.png",
         "description": "Team Owner & Content creator",
         "instalink": "https://linktr.ee/Alfors747"
     },
     {
         "name": "Glazzy",
-        "img": "public/Glazzy.png",
+        "img": "/Glazzy.png",
         "description": "HR Team lead & Content Creator",
         "instalink": "https://solo.to/glazzy0_2"
     },
     {
         "name": "Shawrma",
-        "img": "public/Shawrma.jpg",
+        "img": "/Shawrma.jpg",
         "description": "Discord Team Lead & Content Creator",
         "instalink": "https://solo.to/shawerma"
     },
     {
         "name": "Mody",
-        "img": "public/Mody.jpg",
+        "img": "/Mody.jpg",
         "description": "Production Team Lead & Content Creator",
         "instalink": "https://solo.to/mody81"
     },
     {
         "name": "Zizo",
-        "img": "public/zizo.jpg",
+        "img": "/zizo.jpg",
         "description": "Content Creator",
         "instalink": "https://solo.to/zizogamer"
     },
     {
         "name": "spiex",
-        "img": "public/spiex.png",
+        "img": "/spiex.png",
         "description": "Content Creator",
         "instalink": "https://solo.to/spiex"
     },
     {
         "name": "Sath",
-        "img": "public/Sath.png",
+        "img": "/Sath.png",
         "description": "Content Creator",
         "instalink": "https://solo.to/1sath"
     },
     {
         "name": "Raider",
-        "img": "public/Raider.png",
+        "img": "/Raider.png",
         "description": "Content Creator",
         "instalink": "https://www.twitch.tv/r_aider1"
     },
     {
         "name": "OmarT",
-        "img": "public/OmarTReal.png",
+        "img": "/OmarTReal.png",
         "description": "Content Creator",
         "instalink": "https://www.twitch.tv/realomart"
     },
     {
         "name": "Nyf | نايف",
-        "img": "public/nyf21.jpg",
+        "img": "/nyf21.jpg",
         "description": "Content Creator",
         "instalink": "https://linktr.ee/nyf21"
     },
     {
         "name": "Nbb",
-        "img": "public/Nbb.jpg",
+        "img": "/Nbb.jpg",
         "description": "Content Creator",
         "instalink": "https://solo.to/nbb_1"
     },
     {
         "name": "NAIFOO",
-        "img": "public/NAIFOO.jpg",
+        "img": "/NAIFOO.jpg",
         "description": "Content Creator",
         "instalink": "https://solo.to/1naifoo"
     },
     {
         "name": "MQR | مروان",
-        "img": "public/MQRx9.jpg",
+        "img": "/MQRx9.jpg",
         "description": "Content Creator",
         "instalink": "https://linktr.ee/MQRx9"
     },
     {
         "name": "Hxou",
-        "img": "public/HXOU.png",
+        "img": "/HXOU.png",
         "description": "Content Creator",
         "instalink": "https://solo.to/hxou"
     },
     {
         "name": "Aziz TB",
-        "img": "public/AZIZTB.png",
+        "img": "/AZIZTB.png",
         "description": "Content Creator",
         "instalink": "https://solo.to/aziztb"
     },
     {
         "name": "Abdullah 7sa",
-        "img": "public/Abdullah7sa.png",
+        "img": "/Abdullah7sa.png",
         "description": "Content Creator",
         "instalink": "https://linktr.ee/abdullah7sa"
     },
     {
         "name": "R4ed",
-        "img": "'public/Raed.png'",
+        "img": "'/Raed.png'",
         "description": "Editor & Team Lead",
         "instalink": "https://linktr.ee/R4ededit"
     },
     {
         "name": "Revi7s",
-        "img": "'public/Revi.webp'",
+        "img": "'/Revi.webp'",
         "description": "Graphic Designer & Web Devoloper",
         "instalink": "https://www.instagram.com/revi7s/"
     },
     {
         "name": "Abu Nerfi",
-        "img": "public/AbuNerfi.png",
+        "img": "/AbuNerfi.png",
         "description": "Editor & Content creator",
         "instalink": "https://www.youtube.com/@abu_nerfi"
     }
