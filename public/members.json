@@ -1,115 +1,115 @@
 [
     {
         "name": "Fares",
-        "img": "members/Fares.png",
+        "img": "public/Fares.png",
         "description": "Team Owner & Content creator",
         "instalink": "https://linktr.ee/Alfors747"
     },
     {
         "name": "Glazzy",
-        "img": "members/Glazzy.png",
+        "img": "public/Glazzy.png",
         "description": "HR Team lead & Content Creator",
         "instalink": "https://solo.to/glazzy0_2"
     },
     {
         "name": "Shawrma",
-        "img": "members/Shawrma.jpg",
+        "img": "public/Shawrma.jpg",
         "description": "Discord Team Lead & Content Creator",
         "instalink": "https://solo.to/shawerma"
     },
     {
         "name": "Mody",
-        "img": "members/Mody.jpg",
+        "img": "public/Mody.jpg",
         "description": "Production Team Lead & Content Creator",
         "instalink": "https://solo.to/mody81"
     },
     {
         "name": "Zizo",
-        "img": "members/zizo.jpg",
+        "img": "public/zizo.jpg",
         "description": "Content Creator",
         "instalink": "https://solo.to/zizogamer"
     },
     {
         "name": "spiex",
-        "img": "members/spiex.png",
+        "img": "public/spiex.png",
         "description": "Content Creator",
         "instalink": "https://solo.to/spiex"
     },
     {
         "name": "Sath",
-        "img": "members/Sath.png",
+        "img": "public/Sath.png",
         "description": "Content Creator",
         "instalink": "https://solo.to/1sath"
     },
     {
         "name": "Raider",
-        "img": "members/Raider.png",
+        "img": "public/Raider.png",
         "description": "Content Creator",
         "instalink": "https://www.twitch.tv/r_aider1"
     },
     {
         "name": "OmarT",
-        "img": "members/OmarTReal.png",
+        "img": "public/OmarTReal.png",
         "description": "Content Creator",
         "instalink": "https://www.twitch.tv/realomart"
     },
     {
         "name": "Nyf | نايف",
-        "img": "members/nyf21.jpg",
+        "img": "public/nyf21.jpg",
         "description": "Content Creator",
         "instalink": "https://linktr.ee/nyf21"
     },
     {
         "name": "Nbb",
-        "img": "members/Nbb.jpg",
+        "img": "public/Nbb.jpg",
         "description": "Content Creator",
         "instalink": "https://solo.to/nbb_1"
     },
     {
         "name": "NAIFOO",
-        "img": "members/NAIFOO.jpg",
+        "img": "public/NAIFOO.jpg",
         "description": "Content Creator",
         "instalink": "https://solo.to/1naifoo"
     },
     {
         "name": "MQR | مروان",
-        "img": "members/MQRx9.jpg",
+        "img": "public/MQRx9.jpg",
         "description": "Content Creator",
         "instalink": "https://linktr.ee/MQRx9"
     },
     {
         "name": "Hxou",
-        "img": "members/HXOU.png",
+        "img": "public/HXOU.png",
         "description": "Content Creator",
         "instalink": "https://solo.to/hxou"
     },
     {
         "name": "Aziz TB",
-        "img": "members/AZIZTB.png",
+        "img": "public/AZIZTB.png",
         "description": "Content Creator",
         "instalink": "https://solo.to/aziztb"
     },
     {
         "name": "Abdullah 7sa",
-        "img": "members/Abdullah7sa.png",
+        "img": "public/Abdullah7sa.png",
         "description": "Content Creator",
         "instalink": "https://linktr.ee/abdullah7sa"
     },
     {
         "name": "R4ed",
-        "img": "'members/Raed.png'",
+        "img": "'public/Raed.png'",
         "description": "Editor & Team Lead",
         "instalink": "https://linktr.ee/R4ededit"
     },
     {
         "name": "Revi7s",
-        "img": "'members/Revi.webp'",
+        "img": "'public/Revi.webp'",
         "description": "Graphic Designer & Web Devoloper",
         "instalink": "https://www.instagram.com/revi7s/"
     },
     {
         "name": "Abu Nerfi",
-        "img": "members/AbuNerfi.png",
+        "img": "public/AbuNerfi.png",
         "description": "Editor & Content creator",
         "instalink": "https://www.youtube.com/@abu_nerfi"
     }
