@@ -48,12 +48,6 @@
         "instalink": "https://www.twitch.tv/r_aider1"
     },
     {
-        "name": "OmarT",
-        "img": "/OmarTReal.png",
-        "description": "Streamer",
-        "instalink": "https://www.twitch.tv/realomart"
-    },
-    {
         "name": "Nyf | نايف",
         "img": "/nyf21.jpg",
         "description": "Content Creator",
@@ -78,12 +72,6 @@
         "instalink": "https://linktr.ee/MQRx9"
     },
     {
-        "name": "Hxou",
-        "img": "/HXOU.png",
-        "description": "Streamer",
-        "instalink": "https://solo.to/hxou"
-    },
-    {
         "name": "Aziz TB",
         "img": "/AZIZTB.png",
         "description": "Content Creator",
@@ -94,6 +82,18 @@
         "img": "/Abdullah7sa.png",
         "description": "Content Creator",
         "instalink": "https://linktr.ee/abdullah7sa"
+    },
+    {
+        "name": "OmarT",
+        "img": "/OmarTReal.png",
+        "description": "Streamer",
+        "instalink": "https://www.twitch.tv/realomart"
+    },
+    {
+        "name": "Hxou",
+        "img": "/HXOU.png",
+        "description": "Streamer",
+        "instalink": "https://solo.to/hxou"
     },
     {
         "name": "R4ed",
