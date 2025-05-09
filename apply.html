@@ -21,21 +21,38 @@
       </button>
 
     </div>
-      <section id="base" class="base h-full items-center flex justify-center ">
-         <form  id="teamform" method="POST" class="flex max-w-[28rem] mx-auto  w-full flex-col justify-between rounded-[1rem] items-center shadow-lg bg-[#0F4649] h-[80%]">
+    <div class="w-full z-[-1] absolute inset-0 bg-[size:24px_24px] bg-[position:-1px_-1px] bg-[linear-gradient(to_right,#ffffff08,transparent_1px),linear-gradient(to_bottom,#ffffff08,transparent_1px)]">
+      <div class="hidden absolute top-[50px] mx-[50%] z-[-1] md:inline-flex flex-row">
+        <div class="absolute  inset-0 opacity-50 bgs-blur">
+           <div
+              class="bg-shape1 rounded-full relative z-[-1] size-[100px] opacity-50 bg-primary bgs-blur"
+              ></div>
+        </div>
+     </div>
+    </div>
+      <section id="base" class="base h-full gap-5 items-center flex-col flex justify-center ">
+         <form  id="teamform" method="POST" class="flex max-w-[28rem] mx-auto  w-full  flex-col justify-evenly border border-primary backdrop-filter backdrop-blur-sm bg-opacity-25 rounded-[1rem] items-center shadow-lg bg-[#0F4649] h-[80%]">
             <p class=" pt-10 text-2xl text-primary">Team Application</p>
             <diV class="choose w-full flex flex-col gap-5 justify-center items-center">
-               <label for="appeal" class="  text-sm font-medium text-gray-900 dark:text-white">What will you do?</label>
-               <select id="appeal" class="border text-sm rounded-lg focus:ring-primary focus:border-primary block w-[85%] p-2.5 bg-[#2D3333] border-[#395454] placeholder-gray-400 text-white ">
-                  <option value="cc">Content Creator</option>
-                  <option value="esport">E-sport Pro</option>
-                  <option value="tm">Team Management</option>
-               </select>
-               <button type="button" id="next"  
-               class="!h-[2.5rem] mt-5 mx-12  w-[45%] !min-h-2 btn btn-circle btn-primary"
+               <p for="appeal" class="  text-sm font-medium text-gray-900 dark:text-white">What will you do?</p>
+ 
+               <button type="button" id="ccButton"  
+               class="!h-[2.5rem]  mx-12  w-[45%] !min-h-2 btn btn-primary"
                >
-             Next
+             Content Creator
             </button>
+            
+            <button type="button" id="espButton"  
+            class="!h-[2.5rem] mx-12  w-[45%] !min-h-2 btn btn-primary"
+            >
+          Esport Player
+         </button>
+         
+         <button type="button" id="tmButton"  
+         class="!h-[2.5rem] mx-12  w-[45%] !min-h-2 btn btn-primary"
+         >
+       Team Manager
+      </button>
             </diV>
             <diV class="cc opacity-[0.001] w-full hidden flex-col gap-5 justify-center items-center">
               <label for="appeal" class="  text-sm font-medium text-gray-900 dark:text-white">Your platform?</label>
@@ -105,7 +122,7 @@
                 </svg>         
               </button>
             </div>
-            <image src="public/logo.svg" alt="Pnx logo" width="48" height="48" class="pointer-events-none  mb-5" />
+          
 
          </form>
          <div id="tymsg" class="h-full hidden flex-col  gap-10 justify-center items-center ">

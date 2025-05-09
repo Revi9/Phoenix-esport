@@ -59,86 +59,89 @@ if (window.location.pathname.includes("/team")) {
 }
 
 if (window.location.pathname.includes("/apply")) {
-    const nextButton = document.getElementById("next")!;
-    const choice = document.getElementById("appeal")!;
+
     const choose = document.querySelector('.choose') as HTMLElement;
     const ba = document.querySelector(".ba") as HTMLElement;
     const form = document.getElementById('teamform') as HTMLFormElement;
     const tymsg = document.getElementById('tymsg') as HTMLElement;
     const homebutton = document.getElementById('backbutton') as HTMLElement;
-    nextButton.addEventListener('click', () => {
+    const ccButton = document.getElementById('ccButton') as HTMLElement;
+    const espButton = document.getElementById('espButton') as HTMLElement;
+    const tmButton = document.getElementById('tmButton') as HTMLElement;
 
-
-
+    function ccButtonf() {
+        const cc = document.querySelector(".cc") as HTMLElement;
+        const inputs = cc.querySelectorAll('input');
+        inputs.forEach(function (i) {
+            i.setAttribute("required", "required");
+        })
+        choose.style.opacity = "0";
+        choose.style.display = "none";
+        setTimeout(() => {
+            cc.style.opacity = "100";
+        }, 50);
         //@ts-ignore
-        if (choice.value === "cc") {
-            const cc = document.querySelector(".cc") as HTMLElement;
-            const inputs = cc.querySelectorAll('input');
-            inputs.forEach(function (i) {
-                i.setAttribute("required", "required");
-            })
-            choose.style.opacity = "0";
-            choose.style.display = "none";
+        cc.style.display = "flex";
+        ba.style.display = "flex";
+        ba.onclick = () => {
+            choose.style.opacity = "100";
+            choose.style.display = "flex";
             setTimeout(() => {
-                cc.style.opacity = "100";
+                cc.style.opacity = "0";
             }, 50);
             //@ts-ignore
-            cc.style.display = "flex";
-            ba.style.display = "flex";
-            ba.onclick = () => {
-                choose.style.opacity = "100";
-                choose.style.display = "flex";
-                setTimeout(() => {
-                    cc.style.opacity = "0";
-                }, 50);
-                //@ts-ignore
-                cc.style.display = "none";
-                ba.style.display = "none";
-            }
-
-        }  //@ts-ignore
-        else if (choice.value == "esport") {
-            var esp = document.querySelector('.esport') as HTMLElement;
-            choose.style.opacity = "0";
-            choose.style.display = "none";
-            setTimeout(() => {
-                esp.style.opacity = "100";
-            }, 50);
-            //@ts-ignore
-            esp.style.display = "flex";
-            ba.style.display = "flex";
-            ba.onclick = () => {
-                choose.style.opacity = "100";
-                choose.style.display = "flex";
-                setTimeout(() => {
-                    esp.style.opacity = "0";
-                }, 50);
-                //@ts-ignore
-                esp.style.display = "none";
-                ba.style.display = "none";
-            }
-        } else {
-            var tm = document.querySelector('.tm') as HTMLElement;
-            choose.style.opacity = "0";
-            choose.style.display = "none";
-            setTimeout(() => {
-                tm.style.opacity = "100";
-            }, 50);
-            //@ts-ignore
-            tm.style.display = "flex";
-            ba.style.display = "flex";
-            ba.onclick = () => {
-                choose.style.opacity = "100";
-                choose.style.display = "flex";
-                setTimeout(() => {
-                    tm.style.opacity = "0";
-                }, 50);
-                //@ts-ignore
-                tm.style.display = "none";
-                ba.style.display = "none";
-            }
+            cc.style.display = "none";
+            ba.style.display = "none";
         }
-    })
+    }
+    function espButtonf() {
+        const esp = document.querySelector('.esport') as HTMLElement;
+        choose.style.opacity = "0";
+        choose.style.display = "none";
+        setTimeout(() => {
+            esp.style.opacity = "100";
+        }, 50);
+        //@ts-ignore
+        esp.style.display = "flex";
+        ba.style.display = "flex";
+        ba.onclick = () => {
+            choose.style.opacity = "100";
+            choose.style.display = "flex";
+            setTimeout(() => {
+                esp.style.opacity = "0";
+            }, 50);
+            //@ts-ignore
+            esp.style.display = "none";
+            ba.style.display = "none";
+        }
+    }
+    function tmButtonf() {
+        const tm = document.querySelector('.tm') as HTMLElement;
+        choose.style.opacity = "0";
+        choose.style.display = "none";
+        setTimeout(() => {
+            tm.style.opacity = "100";
+        }, 50);
+        //@ts-ignore
+        tm.style.display = "flex";
+        ba.style.display = "flex";
+        ba.onclick = () => {
+            choose.style.opacity = "100";
+            choose.style.display = "flex";
+            setTimeout(() => {
+                tm.style.opacity = "0";
+            }, 50);
+            //@ts-ignore
+            tm.style.display = "none";
+            ba.style.display = "none";
+        }
+    }
+    ccButton.addEventListener("click", ccButtonf);
+    espButton.addEventListener("click", espButtonf);
+    tmButton.addEventListener("click", tmButtonf);
+
+
+
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
