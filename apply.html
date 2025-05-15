@@ -73,24 +73,35 @@
       
              </select>
             </diV>
-            <diV class="esport opacity-[0.001] w-full hidden flex-col gap-5 justify-center items-center">
-              <label for="appeal" class="  text-sm font-medium text-gray-900 dark:text-white">Your platform?</label>
+            <diV class="esport opacity-[0.001] w-[75%] hidden flex-col gap-5 justify-center items-center">
+      
               <select id="pp" class="border text-sm rounded-lg focus:ring-primary focus:border-primary block w-[85%] p-2.5 bg-[#2D3333] border-[#395454] placeholder-gray-400 text-white ">
+                <option value="" selected disabled hidden>Platform</option>
                 <option value="pc">PC</option>
                 <option value="console">Console</option>
                 <option value="mobile">Mobile</option>
-                <div class="mb-5">
-                  <input  type="email" autocomplete="off" id="email" placeholder="Email Address">
-                  <input  type="text" id="instagram" placeholder="Instagram User">
-                  <input  type="text" id="game" placeholder="Game Name">
-                  <button    type="submit" id="esp"
-                  class=" !h-[2.5rem]  mx-12 w-[45%] !min-h-2 btn btn-circle btn-primary"
-                  >
-                Submit
-               </button>
-              </div>
-      
              </select>
+  
+             <div class="mb-5  flex flex-col items-center gap-5 w-full justify-center   border-[#395454] placeholder-gray-400 text-white ">
+              <select id="game" class="border text-sm rounded-lg focus:ring-primary w-[85%] focus:border-primary block  p-2.5 bg-[#2D3333] border-[#395454] placeholder-gray-400 text-white ">
+                <option value="" selected disabled hidden>Game</option>
+                <option value="mv">Marvel Rivals</option>
+                <option value="rl">Rocket League</option>
+                <option value="ow">Overwatch 2</option>
+                <option value="cs">Counter Strike: 2</option>
+                <option value="lol">League of legends</option>
+                <option value="valorant">Valorant</option>
+                <option value="dota">Dota 2</option>
+             </select>
+              <input  type="email" autocomplete="off" id="email" placeholder="Email Address" class=" w-[100%]">
+              <input  type="text" id="instagram" placeholder="Instagram User">
+     
+              <button    type="submit" id="esp"
+              class=" !h-[2.5rem]  mx-12 w-[45%] !min-h-2 btn btn-circle btn-primary"
+              >
+            Submit
+           </button>
+          </div>
             </diV>
             <diV class="tm opacity-[0.001] w-full hidden flex-col gap-5 justify-center items-center">
               <label for="appeal" class="  text-sm font-medium text-gray-900 dark:text-white">Your Department?</label>

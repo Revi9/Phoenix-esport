@@ -95,7 +95,12 @@ if (window.location.pathname.includes("/apply")) {
         }
     }
     function espButtonf() {
+
         const esp = document.querySelector('.esport') as HTMLElement;
+        const inputs = esp.querySelectorAll('input');
+        inputs.forEach(function (i) {
+            i.setAttribute("required", "required");
+        })
         choose.style.opacity = "0";
         choose.style.display = "none";
         setTimeout(() => {
@@ -117,6 +122,10 @@ if (window.location.pathname.includes("/apply")) {
     }
     function tmButtonf() {
         const tm = document.querySelector('.tm') as HTMLElement;
+        const inputs = tm.querySelectorAll('input');
+        inputs.forEach(function (i) {
+            i.setAttribute("required", "required");
+        })
         choose.style.opacity = "0";
         choose.style.display = "none";
         setTimeout(() => {
