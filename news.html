@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="bg-[#293334] h-screen scroll-smooth">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Apply to be one of Phoenix Esport team members" />
+      <title>Phoenix Esport | News</title>
+      <link rel="icon" href="/logo.png" />
+   </head>
+   <body class="h-full">
+      <div class="loader"><span class="loading loading-ring loading-lg"></span></div>
+      <section
+      id="header"
+      class="flex p-10 md:px-5 md:p-0 w-full  items-center justify-center md:justify-between"
+      >
+      <image src="/logo.svg" alt="png logo" width="56" height="56" class="hidden md:p-2 md:flex md:size-16" />
+      <ul class="flex justify-center">
+         <li><a href="index" class="py-5 order">Home</a></li>
+         <li><a href="#news" class="py-5">News</a></li>
+         <li><a href="/#gallery" class="py-5">Gallery</a></li>
+         <li><a href="/about" class="py-5">About</a></li>
+      </ul>
+   </section>
+      <div class="w-full z-[-1] absolute inset-0 bg-[size:24px_24px] bg-[position:-1px_-1px] bg-[linear-gradient(to_right,#ffffff08,transparent_1px),linear-gradient(to_bottom,#ffffff08,transparent_1px)]">
+         <div class="hidden absolute top-[50px] mx-[50%] z-[-1] md:inline-flex flex-row">
+            <div class="absolute  inset-0 opacity-50 bgs-blur">
+               <div
+                  class="bg-shape1 rounded-full relative z-[-1] size-[100px] opacity-50 bg-primary bgs-blur"
+                  ></div>
+            </div>
+         </div>
+      </div>
+
+
+      <section id="news" class="flex flex-col h-full items-center  ">
+      
+         <div class="relative inline-block my-20">
+            <span class="text-2xl text-white md:text-3xl font-bold">
+             News
+            </span>
+            <span class="absolute -bottom-1 left-0 w-full h-1 bg-gradient-to-r from-[#28CBD0] via-[#21ABAE] to-[#28D3DA] rounded-full"></span>
+          </div>
+
+      <div id="holder" class="flex-wrap gap-5 h-full pb-5 w-full flex justify-center items-start">
+
+      </div>
+ 
+       
+      </section>
+      <script type="module" src="/src/main.ts"></script>
+      <script type="module" src="/src/functions.ts"></script>
+   </body>
+</html>

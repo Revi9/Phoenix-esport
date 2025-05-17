@@ -38,12 +38,12 @@ export default {
           borderColor: "transparent"
         },
         "100%": {
-          borderColor: "white"
+          borderColor: "primary"
         }
       }
     },
     animation: {
-      typing: "typing 3s steps(20) infinite alternate, blink .7s infinite"
+      typing: "typing 4s steps(30) infinite alternate, blink .7s infinite"
     }
   },
   plugins: [

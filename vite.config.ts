@@ -1,4 +1,8 @@
-import { defineConfig } from "vite";
+import { defineConfig, loadEnv } from "vite";
+
+
+
+
 //@ts-ignore
 import path from 'path';
 //@ts-ignore

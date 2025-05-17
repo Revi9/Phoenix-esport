@@ -1,19 +1,124 @@
 import all from '../public/members.json'
+//@ts-expect-error
+import { Octokit } from "https://cdn.skypack.dev/@octokit/rest";
+import { Buffer } from 'buffer/';
+import {
+    Carousel,
+    initTWE,
+} from "tw-elements";
+
+initTWE({ Carousel });
+const octokit = new Octokit({
+    auth: import.meta.env.GITKEY, // Token with repo access
+});
+
+function HomePageStuff() {
+    if (window.location.pathname.includes("/news")) return;
+    if (window.location.pathname.includes("/apply")) return;
+    if (window.location.pathname.includes("/team")) return;
+    if (window.location.pathname.includes("/about")) return;
+
+    const btnPC = document.getElementById('btnPC')!;
+    const btnMobile = document.getElementById('btnMobile')!;
+    const pcItems = document.getElementById('pcItems')!;
+    const mobileItems = document.getElementById('mobileItems')!;
+
+    btnPC.addEventListener('click', () => {
+        setTimeout(() => {
+            pcItems.style.opacity = "100";
+        }, 50);
+
+        pcItems.classList.remove('hidden');
+        mobileItems.classList.add('hidden');
+        mobileItems.style.opacity = "0.0001";
+        btnPC.classList.add('text-primary');
+        btnPC.classList.remove('text-secondary');
+        btnMobile.classList.add('text-secondary');
+        btnMobile.classList.remove('text-primary');
+    });
+
+    btnMobile.addEventListener('click', () => {
+        setTimeout(() => {
+            mobileItems.style.opacity = "100";
+        }, 50);
+
+        mobileItems.classList.remove('hidden');
+        pcItems.classList.add('hidden');
+        pcItems.style.opacity = "0.0001";
+        btnMobile.classList.add('text-primary');
+        btnMobile.classList.remove('text-secondary');
+        btnPC.classList.add('text-secondary');
+        btnPC.classList.remove('text-primary');
+    });
+
+    // Initialize default view to PC items visible
+    btnPC.click();
+}
+HomePageStuff()
+if (window.location.pathname.includes("/news")) {
+
+    const cardHolder = document.getElementById("holder")!;
+    const { data } = await octokit.repos.getContent({
+        owner: 'Revi9',
+        repo: 'Phoenix-esport',
+        path: 'contents/news.json',
+        ref: 'main',
+    });
+
+
+    const jsonStr = Buffer.from(data.content, 'base64').toString('utf-8');
+    const json = JSON.parse(jsonStr);
 
 
 
-function statsget() {
-    if (window.location.pathname.includes("/apply.html")) return;
-    if (window.location.pathname.includes('/team.html')) return;
+
+
+
+    for (let i = 0; i < json.length; i++) {
+        const Card = `<div class="max-w-sm   hover:border-primary hover:shadow-2xl transform transition duration-300 hover:scale-105 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-[#3954543b] dark:border-[#3954547f]">
+               
+            <img class="rounded-t-lg" src="${json[i]["ImgLink"]}" alt="${json[i]["headline"]}" />
+          
+            <div class="p-5">
+         
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">${json[i]["headline"]}</h5>
+             
+               <p class=" font-normal text-gray-700 dark:text-gray-400">${json[i]["pharagraph"]}</p>
+                
+            </div>
+         </div>`;
+        cardHolder.innerHTML += Card;
+    }
 
 
 }
-statsget()
 
+if (window.location.pathname.includes("/about")) {
+    var headerdown = document.getElementById('drop') as HTMLInputElement;
+    var headerelement = document.getElementById("hdr")!;
+    headerdown.addEventListener('click', (_e) => {
+        if (headerdown.checked == true) {
+            setTimeout(() => {
+                headerelement.style.opacity = "100";
+            }, 10);
+            headerelement.style.animation = "leftin 1s";
+            headerelement.style.display = "flex";
+        } else {
+            headerelement.style.animation = "rightin 1s";
+            //@ts-ignore
+            setTimeout(() => {
+                headerelement.style.opacity = "0";
+            }, 200);
+            setTimeout(function () {
+                headerelement.style.display = "none";
+            }, 500);
+        }
+    });
+}
 
-var headerdown = document.getElementById('drop') as HTMLInputElement;
-var headerelement = document.getElementById("hdr")!;
 if (window.location.pathname.includes("/team")) {
+    var headerdown = document.getElementById('drop') as HTMLInputElement;
+    var headerelement = document.getElementById("hdr")!;
     headerdown.addEventListener('click', (_e) => {
         if (headerdown.checked == true) {
 
@@ -36,25 +141,66 @@ if (window.location.pathname.includes("/team")) {
     });
     window.addEventListener("load", () => {
         const membersData = (all)!;
+        var ccContenar = document.getElementById("ccCont") as HTMLElement;
+        var ptContenar = document.getElementById("ptCont") as HTMLElement;
+        const btnCC = document.getElementById('btnCC')!;
+        const btnPT = document.getElementById('btnPT')!;
+        btnCC.addEventListener('click', () => {
+            setTimeout(() => {
+                ccContenar.style.opacity = "100";
+            }, 50);
 
+            ccContenar.classList.remove('hidden');
+            ptContenar.classList.add('hidden');
+            ptContenar.style.opacity = "0.0001";
+            btnCC.classList.add('text-primary');
+            btnCC.classList.remove('text-secondary');
+            btnPT.classList.add('text-secondary');
+            btnPT.classList.remove('text-primary');
+        });
 
+        btnPT.addEventListener('click', () => {
+            setTimeout(() => {
+                ptContenar.style.opacity = "100";
+            }, 50);
 
-        var contenar = document.getElementById("memeberCont") as HTMLElement;
+            ptContenar.classList.remove('hidden');
+            ccContenar.classList.add('hidden');
+            ccContenar.style.opacity = "0.0001";
+            btnPT.classList.add('text-primary');
+            btnPT.classList.remove('text-secondary');
+            btnCC.classList.add('text-secondary');
+            btnCC.classList.remove('text-primary');
+        });
+
+        // Initialize default view to PC items visible
+        btnCC.click();
         //@ts-ignore
         for (let i = 0; i < membersData.length; i++) {
-            const Card = `<div class="group block text-center lg:w-1/5 sm:w-1/3 min-[450px]:w-1/2 w-full">
-            <a class="pf" href=${membersData[i]["instalink"]}>
-             <div class="relative mb-5">
-                <img src=${membersData[i]["img"]} alt="image" class="pfpimg w-28 h-28 rounded-2xl object-cover mx-auto ransition-all duration-500 border-2 border-solid border-transparent group-hover:border-primary"/>
+            const Card = `<div class="max-w-sm hover:border-primary hover:shadow-2xl transform transition duration-300 hover:scale-105 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-[#3954543b] dark:border-[#3954547f]">
+               
+            <img class="rounded-t-lg w-[1024px]" width="1024" height="1024" src="${membersData[i]["img"]}" alt="${membersData[i]["name"]}" />
+          
+            <div class="p-5 flex flex-col justify-center items-center">
+         
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">${membersData[i]["name"]}</h5>
+             
+               <p class=" font-normal text-gray-700 dark:text-gray-400">${membersData[i]["description"]}</p>
+               <button  onclick="window.open('${membersData[i]["instalink"]}')" class="btn w-[50%] my-5 text-lg  btn-primary">Follow</button>
             </div>
-            <h4 class="username text-xl text-white font-semibold text-center mb-2 transition-all duration-500 group-hover:text-primary">${membersData[i]["name"]}</h4>
-            <span class="description text-gray-500 text-center block transition-all duration-500 group-hover:text-[#21ABAE]">${membersData[i]["description"]}</span>                  
-            </a>
-        </div>`;
-            contenar.innerHTML += Card;
+         </div>`;
+            if (membersData[i]["job"] === "cc") {
+                ccContenar.innerHTML += Card;
+            } else {
+                ptContenar.innerHTML += Card;
+            }
         }
-    })
 
+
+
+
+
+    })
 
 }
 
